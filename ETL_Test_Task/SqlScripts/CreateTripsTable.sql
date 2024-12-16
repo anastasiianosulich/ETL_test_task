@@ -13,8 +13,8 @@ BEGIN
         StoreAndFwdFlag NVARCHAR(3) NOT NULL,
         PULocationID INT NOT NULL,
         DOLocationID INT NOT NULL,
-        FareAmount DECIMAL(19, 4) NOT NULL,
-        TipAmount DECIMAL(19, 4) NOT NULL,
+        FareAmount DECIMAL(19, 2) NOT NULL,
+        TipAmount DECIMAL(19, 2) NOT NULL,
         TravelDurationInSeconds AS DATEDIFF(SECOND, TpepPickupDatetime, TpepDropoffDatetime) PERSISTED
     );
 END
